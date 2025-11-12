@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta name="description" content="an online device shop offering multiple devices including apple phones, laptops and watches.">
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" 
+    rel="stylesheet"
+    onload="this.print() = 'all' ">
     <link href="/assets/styles/style.css" rel="stylesheet" />
     <title>Device Shop Checkout</title>
 </head>
 <body>
     <!--Page wrapper start-->
     <div class="page-wrapper">
-        <img class="bg-image" src="/assets/images/background-image.webp" alt="bg image" width="100%" height="200px"/>
+        <img class="bg-image" fetchpriority="high" src="/assets/images/background-image.webp" alt="bg image" width="100%" height="200px"/>
         <div class="headers-container">
             <span class="header">Checkout</span>
             <span class="items-count">3 ITEMS</span>
@@ -22,17 +26,17 @@
             <!--Items containers start-->
             <div class="item-container">
                 <div class="image-card">
-                    <img class="item-image" src="/assets/images/Gold.webp" alt="gold image" />
+                    <img class="item-image" fetchpriority="high" src="/assets/images/Gold.webp" alt="gold image" />
                 </div>
                 <div class="item-name">iPhone 12 Pro</div>
                 <div class="item-price">$999.00</div>
                 <div class="item-color">Golden</div>
                 <div class="item-count">x1</div>
-                <img class="item-delete-icon" src = "/assets/images/close-icon.svg" alt="cross svg icon" />
+                <img class="item-delete-icon" fetchpriority="high" src = "/assets/images/close-icon.svg" alt="cross svg icon" />
             </div>
             <div class="item-container">
                 <div class="image-card">
-                    <img class="item-image" src="/assets/images/Apple-watch.webp" alt="warch image" />
+                    <img class="item-image" fetchpriority="high" src="/assets/images/Apple-watch.webp" alt="warch image" />
                 </div>
                 <div class="item-name">Apple Watch</div>
                 <div class="item-price">$399.00</div>
@@ -71,19 +75,17 @@
             <div id="contact-header">Contact Information</div>
             <form id="contact-form">
                 <label class="label">First&Last name</label>
-                <input class="contact-form-input" type="text" placeholder="Enter first name & last name" aria-label="First name and last name Field" />
+                <input class="contact-form-input" type="text" required placeholder="Enter first name & last name" aria-label="First name and last name Field" />
                 <label class="label">Email Address</label>
-                <input class="contact-form-input" type="text" placeholder="Enter email address" aria-label="Email Address Field" />
+                <input class="contact-form-input" type="text" required placeholder="Enter email address" aria-label="Email Address Field" />
                 <div id="country-code">
                     <div id="country">
                         <div class="label">Country</div>
-                        <select id="countries" class="contact-form-input">
-
-                        </select>      
+                        <select id="countries" class="contact-form-input" required></select>      
                     </div>
                     <div id="code">
                         <div id="code" class="label">Postal code</div>
-                        <input type="number" class="contact-form-input" />
+                        <input type="number" class="contact-form-input" required />
                     </div>         
                 </div>
                 <button id = 'submit-btn' type="submit">

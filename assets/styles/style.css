@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+
+:root, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+    font-family: "Inter";
+}
+
+.page-wrapper {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+}
+
+.containers-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.bg-image {
+    position: absolute;
+}
+
+.items-count {
+    background-color: #1D1D1F;
+    padding: 5px 10px;
+    border-radius: 25px;
+
+}
+
+.headers-container {
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 100px;
+    padding-top: 40px;
+    gap: 20px;
+}
+
+.header {
+    font-size: 1.5rem;
+    font-style: bold;
+    font-weight: 700;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.items-section-wrapper {
+    position: relative;
+    background-color: #D2D5DA;
+    margin: 40px 10px 0px 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 30px;
+}
+
+.item-container {
+    display: grid;
+    grid-template-rows: 25px 40px 10px 10px;
+    grid-template-columns: 120px 120px 40px 40px 30px;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.image-card {
+    background-color: #F3F4F6;
+    padding: 10px 30px 10px 30px;
+    width: 100px;
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #D2D5DA;
+}
+
+.item-name {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.item-price {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+.item-color {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    color: #394150;
+}
+.item-count {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    color: #394150;
+}
+
+.item-delete-icon {
+    grid-column-start: 5;
+    grid-row-start: 4;
+}
+
+hr {
+    border: .2px solid #D2D5DA;
+    margin-bottom: 20px;
+}
+
+#coupon {
+    padding: 15px;
+    column-span: 3;
+    border: 1px solid #D2D5DA;
+    border-radius: 5px;
+}
+
+.calcs-section {
+    display: grid;
+    grid-template-rows: 40px 10px 10px 10px;
+    grid-template-columns:3fr 1fr;
+    row-gap: 20px;
+    column-gap: 5px;
+}
+
+.button {
+    color: #FFFFFF;
+    background-color: #1D1D1F;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+}
+
+.calc-span {
+    color: #394150;
+    font-weight: bold;
+}
+
+.calc-span-total {
+    color: #1D1D1F;
+    font-weight: bold;
+}
+
+.contact-section-wrapper {
+    position: relative;
+    background-color: #FFFFFF;
+    margin: 0px 10px 0px 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 30px;
+    padding-bottom: 2px;
+}
+
+#contact-header {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#contact-form {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.label {
+    color: #394150;
+    padding-bottom: 10px;
+    font-size: 1rem;
+}
+
+.contact-form-input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #E5E7EB;
+    color: #394150;
+    font-size: 1rem;
+    font-weight: 500;
+    border: .6px solid #D2D5DA;
+    border-radius: 5px;
+}
+
+#country-code {
+    display: flex;
+    flex-direction: row;
+    color: #394150;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#country, #code {
+    width: 50%;
+}
+
+#submit-btn {
+    background-color: #1D1D1F;
+    color: #FFFFFF;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-weight: 400;
+
+}
+
+@media(min-width: 1024px) {
+    .containers-wrapper {
+        flex-direction: row;
+        margin-inline: 0;
+    }
+    .items-section-wrapper, .contact-section-wrapper {
+        width: 700px;
+    }
+    .headers-container {
+        align-items: start; 
+        margin: 0 auto;   
+    }
+    .containers-wrapper {
+        margin-top: 70px;
+        position: absolute;
+        padding: 0px 30px;
+    }
+    .items-section-wrapper {
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0px;
+        position: relative;
+    }
+    .contact-section-wrapper {
+        position: relative;
+        margin-top: 40px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+}

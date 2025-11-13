@@ -222,6 +222,9 @@ hr {
 }
 
 @media(min-width: 1024px) {
+    body {
+        background-color: #E5E7EB;
+    }
     .containers-wrapper {
         flex-direction: row;
         margin-inline: 0;

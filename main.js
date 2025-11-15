@@ -11,4 +11,4 @@ fetch('countries.json')
         selectElement === null || selectElement === void 0 ? void 0 : selectElement.appendChild(option);
     });
 })
-    .catch(function (error) { throw new Error('Failed to fetch countries', error); });
+    .catch(function (error) { throw new Error('Failed to fetch countries'); });

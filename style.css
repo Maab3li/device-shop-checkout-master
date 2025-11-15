@@ -70,9 +70,10 @@
 }
 
 .item-container {
+    position: relative;
     display: grid;
     grid-template-rows: 25px 40px 10px 10px;
-    grid-template-columns: 120px 120px 40px 40px 30px;
+    grid-template-columns: 40% 45% 0%;
     width: 300px;
     margin-bottom: 40px;
 }
@@ -228,6 +229,18 @@ hr {
     .containers-wrapper {
         flex-direction: row;
         margin-inline: 0;
+
+
+
+
+
+
+
+
+
+
+
+
     }
     .items-section-wrapper, .contact-section-wrapper {
         width: 700px;
@@ -251,5 +264,8 @@ hr {
         margin-top: 40px;
         border-top-right-radius: 15px;
         border-bottom-left-radius: 0px;
+    }
+    .item-container {
+        grid-template-columns: 40% 45% 3+0%;
     }
 }

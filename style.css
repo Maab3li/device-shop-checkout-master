@@ -19,10 +19,15 @@
 }
 
 .containers-wrapper {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
     padding-bottom: 40px;
+}
+
+.items-section-wrapper, .contact-section-wrapper {
+    flex: 1;
 }
 
 .bg-image {

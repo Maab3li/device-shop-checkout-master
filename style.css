@@ -185,6 +185,7 @@ hr {
     color: #394150;
     padding-bottom: 10px;
     font-size: 1rem;
+    width: 120%;
 }
 
 .contact-form-input {
@@ -202,6 +203,7 @@ hr {
 #country-code {
     display: flex;
     flex-direction: row;
+    width: 100%;
     color: #394150;
     justify-content: space-between;
     gap: 20px;
@@ -229,18 +231,6 @@ hr {
     .containers-wrapper {
         flex-direction: row;
         margin-inline: 0;
-
-
-
-
-
-
-
-
-
-
-
-
     }
     .items-section-wrapper, .contact-section-wrapper {
         width: 700px;
@@ -266,6 +256,6 @@ hr {
         border-bottom-left-radius: 0px;
     }
     .item-container {
-        grid-template-columns: 40% 45% 3+0%;
+        grid-template-columns: 40% 45% 30%;
     }
 }

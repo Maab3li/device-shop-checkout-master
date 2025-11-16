@@ -1,6 +1,6 @@
 var countries = [];
 var selectElement = document.getElementById('countries');
-fetch('countries.json')
+fetch('/countries.json')
     .then(function (response) { return response.json(); })
     .then(function (data) {
     countries = data;

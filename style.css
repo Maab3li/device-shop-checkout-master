@@ -1,13 +1,17 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body {
+body > * {
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%;
+    max-width: 100%;
     min-height: 100vh;
     background-color: white;
+    overflow-x: hidden;
     font-family: "Inter";
 }   
 
@@ -23,12 +27,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 98vw;
+    width: 100%;
     padding-bottom: 40px;
-}
-
-.items-section-wrapper, .contact-section-wrapper {
-    flex: 1;
 }
 
 .bg-image {
@@ -36,7 +36,8 @@ body {
     top: 0;
     inset: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .items-count {
@@ -196,7 +197,7 @@ hr {
     color: #394150;
     padding-bottom: 10px;
     font-size: 1rem;
-    width: 120%;
+    width: 100%;
 }
 
 .snd-label {
@@ -336,13 +337,14 @@ hr {
         border-bottom-left-radius: 0px;
     }
     .item-container {
-        grid-template-columns: 12vw 12vw 4vw;
+        grid-template-columns: 12vw 23vw 0vw;
     }
 }
 
+
 @media(min-width: 1060px) {
     .item-container {
-        grid-template-columns: 120px 180px 10px;
+        grid-template-columns: 120px 240px 10px;
     }
 }
 
@@ -356,41 +358,31 @@ hr {
 
 @media(min-width: 1220px) {
     .item-container {
-        grid-template-columns: 120px 290px 10px;
-    }
-}
-
-
-@media(min-width: 1300px) {
-    .item-container {
         grid-template-columns: 120px 320px 10px;
-        grid-template-columns: 120px 200px 10px;
     }
 }
-
-@media(min-width: 1060px) {
-    .item-container {
-        grid-template-columns: 120px 180px 10px;
-    }
-}
-
-
-@media(min-width: 1110px) {
-    .item-container {
-        grid-template-columns: 120px 260px 10px;
-    }
-}
-
 
 @media(min-width: 1220px) {
     .item-container {
-        grid-template-columns: 120px 290px 10px;
+        grid-template-columns: 120px 330px 10px;
     }
 }
-
 
 @media(min-width: 1300px) {
     .item-container {
-        grid-template-columns: 120px 320px 10px;
+        grid-template-columns: 120px 350px 10px;
     }
 }
+
+@media(min-width: 1350px) {
+    .item-container {
+        grid-template-columns: 120px 380px 10px;
+    }
+}
+
+@media(min-width: 1380px) {
+    .item-container {
+        grid-template-columns: 120px 390px 10px;
+    }
+}
+

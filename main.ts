@@ -2,7 +2,7 @@ let countries: Array<object> =[];
 
 const selectElement = document.getElementById('countries')
 
-    fetch('/countries.json')
+    fetch('./countries.json')
     .then(response => response.json())
     .then(data => {
         countries = data
